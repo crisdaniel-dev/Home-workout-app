@@ -1,4 +1,3 @@
-
 const CACHE = 'fern-iron-v8';
 
 const FILES = [
