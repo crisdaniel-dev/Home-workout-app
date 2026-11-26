@@ -1,7 +1,7 @@
 {
   "name": "Fern & Iron — Home Training",
   "short_name": "Fern & Iron",
-  "description": "A simple home muscle-building workout tracker for busy students.",
+  "description": "A balanced home strength workout tracker with A/B routines, exercise guides, and workout history.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
@@ -9,17 +9,7 @@
   "theme_color": "#14251c",
   "orientation": "portrait",
   "icons": [
-    {
-      "src": "icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    }
+    {"src":"icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
+    {"src":"icon-512.png","sizes":"512x512","type":"image/png","purpose":"any"}
   ]
 }
