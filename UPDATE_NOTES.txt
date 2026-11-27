@@ -1,0 +1,18 @@
+Crisdaniel Fit — Final Workout Update
+
+Included:
+- Updated Workout A and Workout B routines (2 working sets per exercise as programmed).
+- Updated written GUIDE entries for every exercise in both routines.
+- Side Plank timer: 20 seconds on the left, then 20 seconds on the right. A set is marked complete only after both sides finish.
+- Pause, resume, and reset controls for the Side Plank timer.
+- Updated service-worker cache version so the browser can retrieve the new app files.
+- Existing app branding, manifest, and icon assets retained.
+
+Deployment:
+1. Export a backup from the app's History page before replacing site files.
+2. Extract this ZIP.
+3. Upload/replace the files in the root of the GitHub Pages repository.
+4. Commit and push the changes.
+5. Reopen the live app and refresh it. If an old cached version remains, fully close the app/browser tab and reopen it.
+
+Workout progress is stored locally in the browser. Keep an exported backup before updating.
