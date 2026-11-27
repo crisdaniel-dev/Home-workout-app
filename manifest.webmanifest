@@ -1,15 +1,25 @@
 {
-  "name": "Fern & Iron — Home Training",
-  "short_name": "Fern & Iron",
-  "description": "A balanced home strength workout tracker with A/B routines, exercise guides, and workout history.",
+  "name": "Crisdaniel Fit",
+  "short_name": "Crisdaniel Fit",
+  "description": "A personal full-body workout planner and tracker created by Crisdaniel M. Inot with AI assistance.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#101a14",
-  "theme_color": "#14251c",
+  "background_color": "#08110b",
+  "theme_color": "#102016",
   "orientation": "portrait",
   "icons": [
-    {"src":"icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
-    {"src":"icon-512.png","sizes":"512x512","type":"image/png","purpose":"any"}
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
   ]
 }

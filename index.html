@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#14251c"><meta name="description" content="A simple home muscle-building workout tracker for busy students.">
-<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.png" type="image/png">
-<title>Fern & Iron — Home Training</title>
+<meta name="theme-color" content="#102016"><meta name="description" content="Crisdaniel Fit — a personal full-body workout planner and tracker.">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.png" type="image/png"><link rel="apple-touch-icon" href="icon-192.png">
+<title>Crisdaniel Fit</title>
 <style>
 :root{--bg:#101a14;--panel:#1b2a20;--panel2:#22362a;--text:#eef5ed;--muted:#a8b9ab;--green:#9ccc75;--mint:#c0e7a2;--border:#344a39;--warn:#f1c87a;--shadow:0 12px 30px #0003}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#23382a 0,#101a14 60%);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--text);padding:18px 14px calc(28px + env(safe-area-inset-bottom));max-width:900px;margin:auto}header{padding:12px 6px 18px}h1{font-size:1.65rem;margin:0;color:var(--mint);letter-spacing:.02em}header p{margin:6px 0;color:var(--muted)}.pill{display:inline-block;border:1px solid #53694f;border-radius:999px;padding:5px 10px;color:var(--mint);font-size:.8rem;margin-top:6px}.alert{background:#3a3020;border:1px solid #8a6938;color:#ffe5b4;border-radius:14px;padding:12px;margin:8px 0 14px;font-size:.9rem;line-height:1.45}.tabs{display:flex;gap:8px;position:sticky;top:0;background:#101a14eF;padding:8px 0;z-index:5}.tab{flex:1;border:1px solid var(--border);background:var(--panel);color:var(--text);padding:11px;border-radius:12px;font-weight:700}.tab.active{background:var(--green);color:#132016;border-color:var(--green)}section{display:none}section.active{display:block}.card{background:linear-gradient(160deg,var(--panel),#152219);border:1px solid var(--border);border-radius:17px;padding:15px;margin:12px 0;box-shadow:var(--shadow)}.card h2,.card h3{margin:0 0 8px}.muted{color:var(--muted);font-size:.9rem}.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.row>*{flex:1}.btn{background:var(--green);border:0;color:#152119;border-radius:12px;padding:11px 13px;font-weight:800;cursor:pointer}.btn.secondary{background:var(--panel2);color:var(--text);border:1px solid var(--border)}.btn.small{padding:8px 10px;font-size:.88rem}.exercise{border-top:1px solid var(--border);padding:13px 0}.exercise:first-of-type{border-top:0}.exercise-title{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}.exercise-title h3{font-size:1rem;margin:0}.exercise-title .meta{font-size:.82rem;color:var(--muted);text-align:right}.fields{display:flex;gap:9px;margin:10px 0}.fields label{flex:1;font-size:.82rem;color:var(--muted)}input{width:100%;margin-top:5px;background:#0e1711;color:var(--text);border:1px solid var(--border);border-radius:10px;padding:10px;font-size:1rem}.sets{display:flex;gap:7px;flex-wrap:wrap}.setcheck{background:#122018;border:1px solid var(--border);border-radius:9px;padding:8px 10px;display:flex;align-items:center;gap:7px;font-size:.85rem}.setcheck input{width:auto;margin:0;accent-color:var(--green)}.timerbox{text-align:center}.timer{font-size:2.6rem;font-weight:800;color:var(--mint);font-variant-numeric:tabular-nums}.logitem{border-bottom:1px solid var(--border);padding:10px 0}.logitem:last-child{border:0}.foot{text-align:center;color:var(--muted);font-size:.8rem;padding:20px 4px}.installnote{font-size:.86rem;color:var(--muted);line-height:1.5}textarea{width:100%;min-height:75px;background:#0e1711;color:var(--text);border:1px solid var(--border);border-radius:10px;padding:10px;font:inherit}.progress{height:8px;background:#0d1610;border-radius:99px;overflow:hidden;margin:9px 0}.bar{height:100%;background:var(--green);width:0%;transition:width .2s}a{color:var(--mint)}.plank-timer-panel{width:100%;background:#0e1711;border:1px solid var(--border);border-radius:13px;padding:12px;margin-top:10px;text-align:center}.plank-timer-label{font-size:.76rem;font-weight:800;letter-spacing:.12em;color:var(--mint)}.plank-countdown{font-size:2rem!important;margin:5px 0 10px}.plank-timer-buttons{display:flex;gap:8px;flex-wrap:wrap}.plank-timer-buttons button{flex:1;min-width:95px}.plank-hint{margin-top:8px;font-size:.78rem}
 
@@ -12,10 +12,36 @@
 
 .guide-workout-title{color:var(--mint);margin:22px 0 4px;font-size:1.25rem}.guide-workout-note{margin:0 0 10px;color:var(--muted);font-size:.85rem}.guide-caution{border-left:3px solid var(--warn);padding:8px 11px;background:#30291e;border-radius:8px;line-height:1.5}.guide-summary{display:flex;align-items:center;gap:12px;cursor:pointer;list-style:none}.guide-summary::-webkit-details-marker{display:none}.guide-thumb{width:132px;height:104px;object-fit:cover;object-position:center;border-radius:10px;border:1px solid var(--border);flex-shrink:0;background:#0d1710}.guide-summary-text{display:flex;flex-direction:column;gap:5px;min-width:0}.guide-summary-text b{color:var(--mint);font-size:1rem}.guide-summary-text small{color:var(--muted);font-size:.78rem;line-height:1.35}.guide-summary-text .guide-tap{color:var(--green)}.guide-detail{padding-top:12px}.guide-figure{margin:0 auto 12px;max-width:520px}.guide-photo{display:block;width:100%;max-height:380px;object-fit:contain;background:#101a14;border:1px solid var(--border);border-radius:12px}.guide-figure figcaption{text-align:center;color:var(--muted);font-size:.75rem;margin-top:5px}.guide-target{border:1px solid var(--border);background:#142219;padding:9px 11px;border-radius:9px;color:var(--mint);margin:8px 0}.guide-detail p{line-height:1.55;margin:10px 0}.guide-card[open] .guide-thumb{border-color:var(--green)}@media(max-width:520px){.guide-thumb{width:104px;height:88px}.guide-summary{gap:9px}.guide-summary-text b{font-size:.92rem}.guide-summary-text small{font-size:.72rem}}
 
+
+.splash{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:22px;background:radial-gradient(ellipse at 50% 20%,#1d3b25 0,#08110b 72%);transition:opacity .35s ease,visibility .35s ease}
+.splash.hide{opacity:0;visibility:hidden;pointer-events:none}
+.splash-panel{width:min(100%,440px);text-align:center;padding:28px 22px;border:1px solid #477b3d;border-radius:24px;background:linear-gradient(155deg,#14251a,#080f0a);box-shadow:0 18px 60px #0009}
+.splash-icon{width:132px;height:132px;object-fit:cover;border-radius:27px;border:2px solid #78d957;box-shadow:0 0 28px #55b83b55}
+.splash h2{font-size:2rem;margin:16px 0 2px;color:#f1f7ee;letter-spacing:-.04em}
+.splash h2 span{color:#8ce66c}.splash-tag{color:#a7df91;font-size:.78rem;letter-spacing:.18em;font-weight:800}
+.splash-rule{height:1px;background:#35543a;margin:18px 0}
+.splash-about{font-size:.96rem;line-height:1.55;color:#e3ece1}.splash-about b{color:#a5e98a}
+.splash-loading{height:6px;border-radius:99px;background:#263b2a;overflow:hidden;margin:22px 0 12px}
+.splash-loading span{display:block;height:100%;width:0;background:#83e45f;animation:splashload 3.4s ease forwards}
+@keyframes splashload{to{width:100%}}
+.splash-button{width:100%;border:0;border-radius:12px;padding:12px;background:#8fe36c;color:#102016;font-weight:800;font-size:1rem}
+@media(prefers-reduced-motion:reduce){.splash-loading span{animation:none;width:100%}.splash{transition:none}}
 </style></head>
 <body>
-<header><h1>🌿 Fern & Iron</h1><p>Simple strength training for a busy student.</p><span class="pill">3-day A/B plan · Auto-save · Smart A/B rotation · Exercise guides</span></header>
-<div class="alert"><b>Safety first:</b> If you have repeated dizziness or feel close to fainting during workouts, pause strenuous exercise and get medically checked before restarting. Stop immediately if symptoms happen.</div>
+<div class="splash" id="introSplash" role="dialog" aria-modal="true" aria-labelledby="splashTitle">
+ <div class="splash-panel">
+  <img class="splash-icon" src="icon-512.png" alt="Crisdaniel Fit app icon">
+  <h2 id="splashTitle">Crisdaniel <span>Fit</span></h2>
+  <div class="splash-tag">TRAIN · TRACK · GROW</div>
+  <div class="splash-rule"></div>
+  <div class="splash-about"><b>Created by Crisdaniel M. Inot</b><br>BSIS Student<br><br>A personal full-body workout program and tracker, created with the help of AI assistance. Built to organize training, record progress, and make consistent exercise easier.</div>
+  <div class="splash-loading"><span></span></div>
+  <p class="muted">Preparing your fitness workspace...</p>
+  <button class="splash-button" id="enterApp">Continue to Crisdaniel Fit</button>
+ </div>
+</div>
+<header><h1>Crisdaniel <span style="color:#9ccc75">Fit</span></h1><p>Train · Track · Grow</p><span class="pill">3-day A/B plan · Auto-save · Smart A/B rotation · Exercise guides</span></header>
+<div class="alert"><b>General Safety Advisory:</b> This app provides general fitness information and is not a substitute for professional medical advice. Warm up, use proper technique, choose manageable weights, rest between sessions, and stay hydrated. Stop exercising if you feel unwell, experience pain, dizziness, chest discomfort, or unusual shortness of breath. If you have health concerns or are unsure whether an exercise is suitable for you, consult a qualified healthcare professional.</div>
 <nav class="tabs"><button class="tab active" data-tab="workout" data-workout="A">Workout A</button><button class="tab" data-tab="workout" data-workout="B">Workout B</button><button class="tab" data-tab="guide">GUIDE</button><button class="tab" data-tab="progress">History</button></nav>
 <section id="workout" class="active">
 <div class="card"><p class="muted" id="scheduleText">3 non-consecutive days weekly · Week 1: A/B/A · Week 2: B/A/B. Your saved progress stays intact when switching.</p><h3 id="workoutTitle">Workout A</h3><div class="progress"><div class="bar" id="workBar"></div></div><div class="muted" id="doneText">0 sets completed</div><div id="exercises"></div><label class="muted">Session notes</label><textarea id="notes" placeholder="How did the session feel? Record anything helpful..."></textarea><div class="row" style="margin-top:10px"><button class="btn" id="finish">Save completed workout</button><button class="btn secondary" id="reset">Reset checkboxes</button></div></div>
@@ -183,7 +209,11 @@ if(!localStorage.getItem(KEY)){
  state.notes.A=localStorage.getItem('notes-A')||'';state.notes.B=localStorage.getItem('notes-B')||'';
 }
 migrateOldRoutine();
-if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(error=>console.warn('Fern & Iron offline cache could not be registered:',error)));}
+const introSplash=document.getElementById('introSplash');
+const closeIntro=()=>introSplash?.classList.add('hide');
+document.getElementById('enterApp')?.addEventListener('click',closeIntro);
+window.setTimeout(closeIntro,5200);
+if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(error=>console.warn('Crisdaniel Fit offline cache could not be registered:',error)));}
 if(state.plank?.running){state.plank.remaining=Math.max(1,Math.ceil((state.plank.deadline-Date.now())/1000));state.plank.running=false;state.plank.deadline=null;}current=state.current==='B'?'B':'A';renderWorkout();renderAllGuides();renderHistory();
 
 </script></body></html>
